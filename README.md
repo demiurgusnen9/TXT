@@ -17,8 +17,10 @@ Below is my homework and solution
 
  #Внутри локального TXT создать файл “new.txt”.
 
-`   $ cd TXT
-   $ touch new.txt`
+```
+  $ cd TXT
+  $ touch new.txt
+```
 
  #Добавить файл под гит.
 
