@@ -16,7 +16,6 @@ Below is my homework and solution
   remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
   Receiving objects: 100% (3/3), done.
 ```
-
 ### Внутри локального TXT создать файл “new.txt”:
 
 ```
@@ -26,14 +25,14 @@ Below is my homework and solution
 
 ### Добавить файл под гит:
 `
-   $ git add new.txt
+  $ git add new.txt
 `
 ### Закоммитить файл:
 ```
-   $ git commit -m "add new.txt"
-   [main d42955c] add new.txt
-   1 file changed, 0 insertions(+), 0 deletions(-)
-   create mode 100644 new.txt
+  $ git commit -m "add new.txt"
+  [main d42955c] add new.txt
+  1 file changed, 0 insertions(+), 0 deletions(-)
+  create mode 100644 new.txt
 ```
 ### Отправить файл на внешний GitHub репозиторий:
 ```
