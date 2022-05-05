@@ -3,37 +3,40 @@ Here I am learning how to work in GitHub.
 Below is my homework and solution
 # TXT
 
- #Создать внешний репозиторий c названием TXT.
+### Создать внешний репозиторий c названием TXT:
 
- https://github.com/demiurgusnen9/TXT.git
+`https://github.com/demiurgusnen9/TXT.git`
 
- #Клонировать репозиторий TXT на локальный компьютер.
-   $ git clone https://github.com/demiurgusnen9/TXT.git
-   Cloning into 'TXT'...
-   remote: Enumerating objects: 3, done.
-   remote: Counting objects: 100% (3/3), done.
-   remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-   Receiving objects: 100% (3/3), done.
+### Клонировать репозиторий TXT на локальный компьютер:
+```
+  $ git clone https://github.com/demiurgusnen9/TXT.git
+  Cloning into 'TXT'...
+  remote: Enumerating objects: 3, done.
+  remote: Counting objects: 100% (3/3), done.
+  remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+  Receiving objects: 100% (3/3), done.
+```
 
-### Внутри локального TXT создать файл “new.txt”.
+### Внутри локального TXT создать файл “new.txt”:
 
 ```
   $ cd TXT
   $ touch new.txt
 ```
 
- #Добавить файл под гит.
-
+### Добавить файл под гит:
+`
    $ git add new.txt
-
- #Закоммитить файл.
-
+`
+### Закоммитить файл:
+```
    $ git commit -m "add new.txt"
    [main d42955c] add new.txt
    1 file changed, 0 insertions(+), 0 deletions(-)
    create mode 100644 new.txt
-
- #Отправить файл на внешний GitHub репозиторий.
+```
+### Отправить файл на внешний GitHub репозиторий:
+```
    $ git push
     Enumerating objects: 4, done.
     Counting objects: 100% (4/4), done.
@@ -43,17 +46,19 @@ Below is my homework and solution
     Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
     To https://github.com/demiurgusnen9/TXT.git
     60aa8a0..d42955c  main -> main
+```
 
- #Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
-
+### Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+```
    $ vim new.txt
    ФИО - Masalskaya Alena Viktorovna
    Возраст - 30
    Количество домашних животных - 1
    Будущая желаемая зарплата - 500$
+```
 
- #Отправить изменения на внешний репозиторий.
-
+### Отправить изменения на внешний репозиторий.
+```
    $ git commit -am "add info in new.txt"
     warning: LF will be replaced by CRLF in new.txt.
     The file will have its original line endings in your working directory
@@ -69,22 +74,25 @@ Below is my homework and solution
     Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
     To https://github.com/demiurgusnen9/TXT.git
     d42955c..c7bb0d8  main -> main
+```
 
- #Создать файл preferences.txt
-
+### Создать файл preferences.tx:
+`
    $ touch preferences.txt
+`
 
- #В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
-
+### В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT:
+```
    $ vim preferences.txt
    Любимый фильм - Трудности перевода
    Любимый сериал - Клиника
    Любимая еда - Кукурузные_палочки
    Любимое время года - Зима
    Страна которую хотели бы посетить - Исландия
+```
 
- #Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
-
+### Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+```
    $ vim skills.txt
 
    1. Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC.
@@ -114,8 +122,10 @@ Below is my homework and solution
    25. Нагрузочное тестирование в Jmeter.
    26. Методология разработки Scrum.
    27. Python. (Изучение основ. Создание клиент серверного приложения)
+```
 
- #Сделать коммит в одну строку.
+### Сделать коммит в одну строку:
+```
    $ git add . && git commit -m "add preferences.txt and skills.txt with info"
 
     warning: LF will be replaced by CRLF in preferences.txt.
@@ -126,9 +136,10 @@ Below is my homework and solution
      2 files changed, 32 insertions(+)
       create mode 100644 preferences.txt
        create mode 100644 skills.txt
+```
 
- #Отправить сразу 2 файла на внешний репозиторий.
-
+### Отправить сразу 2 файла на внешний репозиторий.
+```
    $ git push
     Enumerating objects: 5, done.
     Counting objects: 100% (5/5), done.
@@ -138,30 +149,34 @@ Below is my homework and solution
     Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
     To https://github.com/demiurgusnen9/TXT.git
       c7bb0d8..07e1510  main -> main
+```
 
- #На веб интерфейсе создать файл bug_report.txt.
-
+### На веб интерфейсе создать файл bug_report.txt:
+`
    done
-
- #Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 
+`
+### Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+`
    done
+`
 
- #На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
- 
+### На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT:
+```
    ID:ID
    Summary:Короткое описание
    Steps to Reproduce: Шаги воспроизведения
    Expected Result:Ожидаемый результат
    Actual Result:Фактический результат
    Severity:Серьезность	
+```
 
- #Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 
+### Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+`
    done
+`
 
- 18. Синхронизировать внешний и локальный репозиторий TXT
-
+### Синхронизировать внешний и локальный репозиторий TXT
+```
    $ git pull
     remote: Enumerating objects: 7, done.
     remote: Counting objects: 100% (7/7), done.
@@ -175,3 +190,4 @@ Below is my homework and solution
     bug_report.txt | 6 ++++++
     1 file changed, 6 insertions(+)
     create mode 100644 bug_report.txt
+```
